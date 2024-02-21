@@ -1,0 +1,50 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #202020;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    color: #ed1d24; /* Marvel Red */
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"], button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="text"] {
+    background-color: #333;
+    color: #fff;
+}
+
+button[type="submit"] {
+    background-color: #ed1d24; /* Marvel Red */
+    color: #fff;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #b21e26; /* Slightly darker red */
+}
+
+button[type="submit"]:focus {
+    outline: none;
+}

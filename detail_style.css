@@ -1,0 +1,34 @@
+/* CSS styles for the movie details page */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+}
+
+.movie-details {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #202020; /* Dark gray background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    color: #ed1d24; /* Marvel Red */
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #fff; /* White text */
+}
+
+strong {
+    font-weight: bold;
+}
+
