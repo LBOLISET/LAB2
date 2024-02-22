@@ -18,7 +18,7 @@ Here are the step-by-step instructions to set up the web application:
 6. Access the web application:
    - Once all files are uploaded, navigate to the URL where your web application is hosted. This could be the domain name or IP address of your server.
 
-URL: https://in-info-web4.informatics.iupui.edu/~lboliset/APP/login.html
+URL: https://in-info-web4.informatics.iupui.edu/~lboliset/LAB2/
 
 Team Members:
 Lakshmi Mounika Bolisetti
