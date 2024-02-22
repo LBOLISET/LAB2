@@ -1,27 +1,22 @@
+// script.js
+
 document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('searchForm').addEventListener('submit', function (event) {
-        // Prevent form submission
-        event.preventDefault();
+    // Getting the form element
+    var form = document.querySelector('form');
 
-        // Validate search terms
-        var movie = document.getElementById('movie').value.trim();
-        var year = document.getElementById('year').value.trim();
-        var studio = document.getElementById('studio').value.trim();
-        var director = document.getElementById('director').value.trim();
+    // Attaching a submit event listener to the form
+    form.addEventListener('submit', function (event) {
+        // Getting input values
+        var movieName = document.querySelector('input[name="Movie"]').value.trim();
+        var releaseYear = document.querySelector('input[name="Release Year"]').value.trim();
+        var studio = document.querySelector('input[name="Ownership"]').value.trim();
+        var director = document.querySelector('input[name="Director"]').value.trim();
 
-        // Check if at least one search term is provided
-        if (!movie && !year && !studio && !director) {
-            alert('Please provide at least one search term.');
-            return;
+        // Checking if all input fields are empty
+        if (!movieName && !releaseYear && !studio && !director) {
+            // If all fields are empty, prevent form submission and show an alert
+            event.preventDefault();
+            alert('Please fill at least one field before submitting.');
         }
-
-        // Check if year is numeric and within acceptable range
-        if (year && (!/^\d+$/.test(year) || parseInt(year) < 1900 || parseInt(year) > new Date().getFullYear())) {
-            alert('Please enter a valid release year between 1900 and the current year.');
-            return;
-        }
-
-        // If all validations pass, submit the form
-        this.submit();
     });
 });
