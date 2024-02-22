@@ -1,14 +1,18 @@
+/* CSS styles for the search page */
+
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #000;
+    background-color: #000; /* Marvel black */
     color: #fff;
+    margin: 0;
+    padding: 20px;
 }
 
 .container {
     width: 50%;
     margin: 0 auto;
     padding: 20px;
-    background-color: #202020;
+    background-color: #202020; /* Dark gray */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -28,10 +32,7 @@ input[type="text"], button[type="submit"] {
     margin-bottom: 10px;
     border: none;
     border-radius: 5px;
-}
-
-input[type="text"] {
-    background-color: #333;
+    background-color: #333; /* Dark gray */
     color: #fff;
 }
 
